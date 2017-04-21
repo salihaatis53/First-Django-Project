@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %} Anasayfa - {{ block.super }} {% endblock %}
+
+  {% block body %}
+
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8" style="background-color: #67b168;" ><h2>Merhabalar Ben Saliha</h2></div>
+          <div class="col-md-8" style="background-color: #5b80b2;" ><h4>Python Django Teknolojileri ile geliştirdiğim ilk Blogum, Temel blog araçları bulunuyor.</h4></div>
+          <div class="col-md-8" style="background-color: #5a7b8c;" ><h4>Sağ üstten Blog menüsüne tıklayarak yazdığım bir kaç deneme yazısına ulaşabilirsin.</h4></div>
+
+      </div>
+
+Hoşgeldiniz: {{ request.user.get_full_name }}
+
+    </div>
+
+  {% endblock %}
